@@ -1,7 +1,8 @@
 {
   "name": "hardhat-project",
   "scripts": {
-    "deploy:goerli": "npx hardhat run ./scripts/deploy.ts --network goerli"
+    "deploy:goerli": "npx hardhat run ./scripts/deploy.ts --network goerli",
+    "verify": "npx hardhat verify --contract contracts/Qtum.sol:QtumToken --network goerli 0x16b0335e5c59F8bF8C734a2db61C0df39F92cf91"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.6",
